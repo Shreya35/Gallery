@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {withRouter} from "react-router-dom"
 import './App.css'
 
 
@@ -12,7 +13,6 @@ class Gallery extends Component {
     }
     
   handleMouseHover=()=> {
-      console.log('method called')
       this.setState({isHovering: !this.state.isHovering})
   }
 
@@ -30,7 +30,7 @@ class Gallery extends Component {
      if(this.state.isHovering) {
       return (
         <div className="wrapperBottomContent">
-          {/* <img src="/dotted.png" className="downloadImage"/> */}
+          <img src="/dotted.png" className="downloadImage"/>
           <img src="/download.png" alt="download" className="downloadImage"/>
         </div>
       )
@@ -46,22 +46,28 @@ class Gallery extends Component {
        )
      }
    }
+   imageClick=()=>{
+     this.props.history.push('/test')
+   }
   render() {
-    console.log('this.props',this.props)
     return (
       
          <React.Fragment>
+           <div>
            <div className={this.state.isHovering?"galleryWrapperonHover":"galleryWrapper"} onMouseEnter={this.handleMouseHover}
           onMouseLeave={this.handleMouseHover}>
-            <img src={`${this.props.imgName}.jpg`} className="imageInGallery" alt="cat" />
+             <h4 className="headingWrapper">Clothes</h4>
+             <img src={`${this.props.imgName}.jpg`} className="imageInGallery" alt="cat" onClick={this.imageClick} />
           
-           {this.onImageHover()}
+           {/* {this.onImageHover()}
              {this.onImageHoverDownloadOption()}
-             {this.onImageHoverAuthorOption()}
+             {this.onImageHoverAuthorOption()} */}
         </div>
+           </div>
+       
          </React.Fragment>
         
     );
   }
 }
-export default Gallery
+export default withRouter(Gallery)

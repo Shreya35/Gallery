@@ -1,0 +1,61 @@
+.wrapper{
+    display: flex;
+    margin: 0px;
+    margin-top: 15px;
+}
+.division1Wrapper{
+    width:20%
+}
+.division2Wrapper{
+    width: 60%;
+}
+.division2SubWrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.division2ImgWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 30px;
+}
+.division3Wrapper{
+    width: 20%;
+}
+.iconStyle{
+    width: 43px;
+    margin-left: 15px;
+}
+.divsion1Text1{
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #17286f;
+    color: white;
+    border-radius: 23px;
+    width: 34%;
+    padding: 21px;
+    font-weight: bold;
+    height: 22%;
+}
+
+.divisionText3{
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 23px;
+    width: 34%;
+    padding: 21px;
+    font-weight: bold;
+    height: 22%;
+
+}
+.rightIconWrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 18px;
+}
+.horizontalStyle{
+    width: 43px;
+}

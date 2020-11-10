@@ -4,11 +4,12 @@ class Dummy extends Component{
     constructor(props){
         super(props);
         this.state={
-
+          onMoreOptionsClick: false
         }
     }
     moreOptions=()=>{
-        // console.log('<<<clicked')
+        console.log('<<<clicked');
+        this.setState({onMoreOptionsClick:!this.state.onMoreOptionsClick})
     }
     render(){
        
@@ -55,6 +56,10 @@ class Dummy extends Component{
                        </a>
                    </li>
                    <li>
+                       {/* {this.state.onMoreOptionsClick&&<div>
+                           Hello World
+                       </div>} */}
+                      
                        <a href="#" className="noul">
                         <img src="/dotted.png" className="dottedIcon" onClick={this.moreOptions}/>
                        </a>

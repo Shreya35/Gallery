@@ -10,18 +10,25 @@ class Demo extends Component {
     constructor(props) {
         super(props);
         this.state={
-            images: ["image1","image2","image3","image4","image5","image6","image7","image8","image9","image10","image11","image12","image13","image14","image15"]
+            images: ["image1","image2","image3","image4","image5","image6","image7","image8","image9","image10","image11","image12","image13","image14","image15",
+            "image1","image2","image3","image4","image5","image6","image7","image8","image9","image10","image11","image12","image13","image14","image15"]
            
         }
     }
     
- 
 
+handleClick=()=>{
+    console.log('add+++++');
+    this.setState({images: [...this.state.images,"image1","image2","image3","image4","image5","image6","image7","image8","image9","image10","image11","image12","image13","image14","image15",
+    "image1","image2","image3","image4","image5","image6","image7","image8"]})
+   
+}
 
   render() {
     return (
         <>
-          <Header/>
+        <div className="parentCont">
+        <Header/>
     <div classNme="gridWrapper">
     <StackGrid
      columnWidth={400}
@@ -35,7 +42,12 @@ class Demo extends Component {
 
 
 </StackGrid>
+<div className="addMoreImagesWrapper">
+    <img src="/plus.png" alt="Add" className="addMoreImages" onClick={this.handleClick}/> 
+</div>
     </div>
+        </div>
+          
   
         </>
       

@@ -1,0 +1,30 @@
+.headerWrapper{
+    display: flex;
+    width: 100%;
+    margin-top: 0px
+  }
+  .iconStyle{
+    height: 37px;
+    width: 47px;
+    margin-left: 20px;
+  }
+  .leftWrap{
+      display: flex;
+      width: 60%;
+      align-items: center;
+  }
+  .rightWrap{
+      display: flex;
+      width: 40%;
+      justify-content: flex-end;
+      margin-right: 15px;
+      align-items: center;
+  }
+  .moreOptionsStyle{
+    height: 37px;
+    width: 47px;
+  }
+  .headerCat{
+    display: flex;
+    margin-left: 52px;
+  }
