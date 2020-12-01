@@ -47,7 +47,7 @@ class Gallery extends Component {
      }
    }
    imageClick=()=>{
-     this.props.history.push('/test')
+     this.props.history.push('/test1')
    }
   render() {
     return (

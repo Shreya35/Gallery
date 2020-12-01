@@ -3,6 +3,19 @@
     margin: 0px;
     margin-top: 15px;
 }
+.singleHeadingWrapper{
+    margin-top: 22px;
+}
+.unordSingleHeadingWrapper{
+    color: deeppink;
+    display: flex;
+    /* justify-content: space-around; */
+    font-weight: bold;
+    font-size: 25px;
+}
+.liSingleHeadingWrapper{
+    cursor: pointer;
+}
 .division1Wrapper{
     width:20%
 }
@@ -33,10 +46,10 @@
     background-color: #17286f;
     color: white;
     border-radius: 23px;
-    width: 34%;
+    width: 46%;
     padding: 21px;
     font-weight: bold;
-    height: 22%;
+    height: 29%;
 }
 
 .divisionText3{
@@ -45,10 +58,10 @@
     background-color: red;
     color: white;
     border-radius: 23px;
-    width: 34%;
+    width: 46%;
     padding: 21px;
     font-weight: bold;
-    height: 22%;
+    height: 29%;
 
 }
 .rightIconWrapper{
@@ -59,3 +72,21 @@
 .horizontalStyle{
     width: 43px;
 }
+li:link {
+    color: green;
+  }
+  
+  /* visited link */
+  li:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  li:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  li:active {
+    color: yellow;
+  }

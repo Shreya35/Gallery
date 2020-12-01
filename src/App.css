@@ -53,11 +53,23 @@
 }
 .imageInGallery{
   height: 100%;
-    width: 100%;
+    width: 80%;
     position: relative;
     border-radius: 20px;
     cursor: pointer
 }
+.galHeader{
+  font-weight: bold;
+  margin-top: 22px;
+  font-size: 25px;
+  margin-left: 34px;
+  color: deeppink;
+  cursor: pointer;
+}
+.galHeader:link{color: green}
+.galHeader:visited{color:green}
+.galHeader:hover{color:red}
+.galHeader:active{color:yellow}
 .authorStyleImg{
   width: 10%;
   border-radius: 15px;
@@ -174,7 +186,7 @@ ul,ol{
   width: 20px;
 }
 .messageIcon{
-  width: 20px;
+  width: 28px;
 }
 .dottedIcon{
   width: 20px;
@@ -253,7 +265,7 @@ ul,ol{
   color: white;
   font-size: 13px;
   font-weight: bold;
-  bottom: 18px;
+  bottom: 11px;
   left: 7px;
   border-radius: 25px;
   padding-left: 5px;
@@ -270,10 +282,31 @@ ul,ol{
 }
 .headingWrapper{
   position: absolute;
-  top: -10px;
+  top: 11px;
   z-index: 1;
   margin-left: 7px;
   font-weight: bold;
   font-size: 20px;
   color: yellow;
+}
+.menuPopupWrapper{
+  position: relative;
+}
+.menuListPopUp{
+  background: #f1e8e8;
+  padding: 17px;
+  position: absolute;
+  top: 26px;
+  right: 17px;
+  z-index: 3;
+  /* font-weight: bold; */
+  /* border-radius: 11px; */
+  /* margin: 10px; */
+  color: black;
+  /* width: 103px; */
+  /* width: 77%; */
+  width: 110px;
+}
+.itemPopUp{
+ cursor: pointer;
 }

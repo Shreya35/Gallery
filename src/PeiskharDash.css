@@ -1,0 +1,63 @@
+.peiskharWrapper{
+    /* margin-top: 30px; */
+    background-color: #bbdfea;
+    /* height: 100% */
+}
+.box1Wrapper{
+    display: flex;
+    width: 40%;
+    padding: 40px;
+    background-color: #dad5d5;
+    margin-top: 20px;
+    border-radius: 22px;
+}
+.peiskharWrapper1{
+  display: flex;
+  justify-content: space-around;
+}
+.peiskharWrapper2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.rightDash1{
+    margin-left: 40px;
+}
+.tableWrap{
+    border: 1px solid black;
+}
+.tr1Wrapper{
+    border-bottom: 1px solid black;
+    background-color: #e4e4be;
+}
+.th1Wrapper{
+    font-weight: bold;
+    padding: 5px;
+}
+.tr2Wrapper{
+    text-align: center;
+}
+.td1Wrapper{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+}
+.dashWrapper{
+    font-family: sans-serif;
+    color: #9a1919;
+    font-weight: bold;
+    margin-left: 35px;
+    font-size: 24px;
+}
+.btnWrapperDashboard{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.btnDashStyle{
+    color: white;
+    font-weight: bold;
+    background-color: #242463;
+    padding: 5px;
+    width: 30%;
+}

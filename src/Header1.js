@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import {withRouter} from "react-router-dom"
 
 class Dummy extends Component{
     constructor(props){
@@ -8,8 +9,16 @@ class Dummy extends Component{
         }
     }
     moreOptions=()=>{
-        console.log('<<<clicked');
         this.setState({onMoreOptionsClick:!this.state.onMoreOptionsClick})
+    }
+    onLogoutClick=()=>{
+        this.props.history.push('/')
+    }
+    onPreferenceClick=()=>{
+        this.props.history.push('/preference')
+    }
+    onHelpClick=()=>{
+       this.props.history.push('/help')
     }
     render(){
        
@@ -17,12 +26,7 @@ class Dummy extends Component{
             <>
              <div className="headerWrapper">
              <div className="leftWrapper">
-                <div>
-                  <a href="#">
-                  <img src="/icon.png" className="iconStyle"/>
-               </a>
-                </div>
-            
+                
                <div className="searchboxContainer">
                  <input type="text" placeholder="search" className="inputBoxStyle"/>
                  <button className="searchIconButton">
@@ -38,15 +42,10 @@ class Dummy extends Component{
                            Home
                        </a>
                    </li>
-                   <li>
-                       <a href="#" className="noul">
-                           Following
-                       </a>
-                   </li>
                   
                    <li>
                        <a href="#" className="noul">
-                         <img src="/message.png" className="messageIcon"/>    
+                         <img src="/person-icon.png" className="messageIcon"/>    
                        </a>
                    </li>
                    <li>
@@ -56,9 +55,18 @@ class Dummy extends Component{
                        </a>
                    </li>
                    <li>
-                       {/* {this.state.onMoreOptionsClick&&<div>
-                           Hello World
-                       </div>} */}
+                       {this.state.onMoreOptionsClick&&<div className="menuPopupWrapper">
+                        <ul className="menuListPopUp">
+                           <li className="itemPopUp" onClick={this.onPreferenceClick}>
+                               Preference
+                           </li>
+                           <li className="itemPopUp" onClick={this.onHelpClick}>
+                               Help
+                           </li>
+                           <li className="itemPopUp" onClick={this.onLogoutClick}>
+                               Logout
+                           </li>
+                       </ul></div>}
                       
                        <a href="#" className="noul">
                         <img src="/dotted.png" className="dottedIcon" onClick={this.moreOptions}/>
@@ -73,4 +81,4 @@ class Dummy extends Component{
         )
     }
 }
-export default Dummy
+export default withRouter(Dummy)
